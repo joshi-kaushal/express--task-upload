@@ -1,0 +1,15 @@
+extends layout
+
+<h1>{{title}}</h1>
+
+<p>{{body}}</p>
+
+<div class="mx-auto p-2 m-2 text-white" style="width:500px">
+  {{#if errors}}
+    <ul style="list-style=none;">
+      {{#each errors}}
+        <li class="text-danger">{{msg}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
